@@ -1,8 +1,8 @@
-.container__manu-title {
+.container__menu-title {
     color: white;
 }
 
-.container__manu-title > h1 {
+.container__menu-title > h1 {
     margin-top: 15px;
     margin-bottom: 15px;
     font-size: 100px;
@@ -11,7 +11,13 @@
     justify-content: center;
 }
 
-.container__manu-title > hr {
+.container__menu-title > hr {
     margin-top: 20px;
     margin-bottom: 5px;
+}
+
+@media screen and (max-width:600px) {
+    .container__menu-title > h1 {
+        font-size: 30px;
+    }
 }
