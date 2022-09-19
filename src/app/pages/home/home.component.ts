@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { dataFake } from '../../data/dataFake';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
+  filmes: any;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.filmes = dataFake;
+  }
 }
