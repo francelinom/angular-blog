@@ -1,16 +1,13 @@
 <div class="container__content">
   <a [routerLink]="['']"> << VOLTAR </a>
   <div class="content__cover">
-    <img
-      src="https://observatoriodocinema.uol.com.br/wp-content/uploads/2022/08/O-Incrivel-Hulk-Divulgacao-1200x900-1.jpg"
-      alt=""
-    />
+    <img src="{{ photoCover }}" alt="" />
   </div>
   <div class="content__title">
-    <h1>Minha Noticia</h1>
+    <h1>{{ contentTitle }}</h1>
     <hr />
   </div>
   <div class="content__description">
-    <p>olá mundo!</p>
+    <p>{{ contentDescription }}</p>
   </div>
 </div>
